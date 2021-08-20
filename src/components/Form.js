@@ -14,9 +14,14 @@ export default function Form(props) {
         setText(newText);
     }
 
+    const handleClClick = () => {
+        setText('');
+    }
+
     const handleOnChange = (event) => {
         setText(event.target.value);
     }
+
 
     return (
         <>
@@ -26,7 +31,8 @@ export default function Form(props) {
                     <textarea className="form-control" value={text} id="box" rows="8" onChange={handleOnChange} placeholder="Enter Text Here"></textarea>
                 </div>
                 <button className="btn btn-primary mx-3" onClick={handleUpClick}>Convert to upper case</button>
-                <button className="btn btn-primary" onClick={handleLoClick}>Convert to lower case</button>
+                <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to lower case</button>
+                <button className="btn btn-primary mx-2" onClick={handleClClick}>Clear</button>
             </div>
 
             <div className="container my-2">
