@@ -15,6 +15,10 @@ function App() {
           typ: type, 
           msg: message,
         })
+
+        setTimeout(() => {
+            setalert(null);
+        }, 2000);
   }
 
 

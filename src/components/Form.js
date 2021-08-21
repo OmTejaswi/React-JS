@@ -34,7 +34,7 @@ export default function Form(props) {
 
         navigator.clipboard.writeText(tex.value);
 
-        props.alert("success", ": Copied successfully!")
+        props.alert("success", ": Copied to clipboard!")
     }
 
     // const handleExtraSpaces = () => {
