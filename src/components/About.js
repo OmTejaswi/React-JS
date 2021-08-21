@@ -37,7 +37,7 @@ export default function About(props) {
     // }
 
     return (
-        <div className="container" style={{backgroundColor: props.mode==="light"?'white':'black', color: props.mode==='light'?'black':'white', borderRadius: '10px'}}>
+        <div id="about-us" className="container" style={{backgroundColor: props.mode==="light"?'white':'black', color: props.mode==='light'?'black':'white', borderRadius: '10px'}}>
             <h1>About Us</h1>
             <div className="accordion" id="accordionExample">
                 <div className="accordion-item">

@@ -16,7 +16,7 @@ export default function Navbar(props) {
               <a className="nav-link active" aria-current="page" href="/">{props.nav1}</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">{props.nav2}</a>
+              <a className="nav-link" href="#about-us">{props.nav2}</a>
             </li>
           </ul>
           <form className="d-flex">
