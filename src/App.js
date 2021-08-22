@@ -10,7 +10,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  HashRouter
 } from "react-router-dom";
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <HashRouter>
         <Navbar title="TextUtils" nav1="Home" nav2="About Us" mode={theme} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
@@ -61,7 +62,7 @@ function App() {
             </Route>
           </Switch>
         </div>
-      </Router>
+      </HashRouter>
       <br /><br />
     </>
   );
