@@ -9,8 +9,6 @@ export default function Err() {
         window.location.replace(window.location.protocol + "//" + window.location.host + '/React-JS')
     }
     return (
-        <div>
-            Hello
-        </div>
+        <div></div>
     )
 }
