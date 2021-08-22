@@ -51,13 +51,13 @@ function App() {
         <div className="container my-3">
 
           <Switch>
-            <Route exact path="/React-JS/about">
+            <Route exact path="/about">
               <About mode={theme} />
             </Route>
-            <Route exact path="/React-JS/home">
+            <Route exact path="/home">
               <Form heading="Enter the text to analyze" mode={theme} alert={showAlert} />
             </Route>
-            <Route exact path="/React-JS">
+            <Route exact path="/">
               <Form heading="Enter the text to analyze" mode={theme} alert={showAlert} />
             </Route>
           </Switch>
