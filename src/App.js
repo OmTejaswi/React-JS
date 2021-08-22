@@ -50,7 +50,7 @@ function App() {
         <div className="container my-3">
 
           <Switch>
-            <Route exact path="React-JS/about">
+            <Route exact path="/React-JS/about">
               <About mode={theme} />
             </Route>
             <Route exact path="/React-JS/home">
