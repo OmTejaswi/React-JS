@@ -66,7 +66,7 @@ export default function Form(props) {
 
                 {/* preview */}
                 <h2 style={{color: props.mode==="light"?'black':'white'}}>Preview</h2>
-                <p>{text.length>0?text:"Enter something the the text box to preview it."}</p>
+                <p style={{color: props.mode==="light"?'black':'white'}} >{text.length>0?text:"Enter something the the text box to preview it."}</p>
             </div>
         </>
     )
