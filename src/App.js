@@ -4,6 +4,7 @@ import Form from './components/Form';
 import About from './components/About';
 import Alert from './components/Alert'
 import React, { useState } from 'react';
+import Err from './components/Err';
 
 // react router
 import {
@@ -59,6 +60,7 @@ function App() {
             </Route>
             <Route exact path="/">
               <Form heading="Enter the text to analyze" mode={theme} alert={showAlert} />
+              <Route component={Err} />
             </Route>
           </Switch>
         </div>
