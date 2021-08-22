@@ -14,10 +14,10 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/home">{props.nav1}</Link>
+              <Link className="nav-link active" aria-current="page" to="/React-JS/home">{props.nav1}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">{props.nav2}</Link>
+              <Link className="nav-link" to="React-JS//about">{props.nav2}</Link>
             </li>
             <li className="form-check form-switch nav-item my-2">
               <input className="form-check-input" type="checkbox" onClick={props.toggleMode} id="flexSwitchCheckDefault" />
