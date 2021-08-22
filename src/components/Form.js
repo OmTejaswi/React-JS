@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 
 export default function Form(props) {
+    document.title = 'TextUtils-Home'
+
     const [text, setText] = useState("");
 
     const handleUpClick = () => {
