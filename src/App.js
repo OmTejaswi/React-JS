@@ -44,7 +44,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navbar title="TextUtils" nav1="Home" nav2="About Us" mode={theme} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
