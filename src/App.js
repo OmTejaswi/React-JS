@@ -8,10 +8,10 @@ import Err from './components/Err';
 
 // react router
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Switch,
   Route,
-  Link,
+  // Link,
   HashRouter
 } from "react-router-dom";
 
@@ -56,10 +56,10 @@ function App() {
               <About mode={theme} />
             </Route>
             <Route exact path="/home">
-              <Form heading="Enter the text to analyze" mode={theme} alert={showAlert} />
+              <Form heading="Try TextUtils - word counter, character counter, remove extra spaces" mode={theme} alert={showAlert} />
             </Route>
             <Route exact path="/">
-              <Form heading="Enter the text to analyze" mode={theme} alert={showAlert} />
+              <Form heading="Try TextUtils - word counter, character counter, remove extra spaces" mode={theme} alert={showAlert} />
               <Route component={Err} />
             </Route>
           </Switch>
