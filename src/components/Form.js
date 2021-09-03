@@ -62,7 +62,7 @@ export default function Form(props) {
             <div className="container my-2">
                 <h2 style={{color: props.mode==="light"?'black':'white'}}>You text summary</h2>
                 <p style={{color: props.mode==="light"?'black':'white'}} >{text.length} characters and {text.split(" ").filter((element)=>{return element.length !== 0;}).length} words</p>
-                <p style={{color: props.mode==="light"?'black':'white'}} >{0.008 * text.split(" ").length} word will take minutes to read for an average person</p>
+                <p style={{color: props.mode==="light"?'black':'white'}} >{text.split(" ").filter((element)=>{return element.length !== 0;}).length} word will take {0.008 * text.split(" ").filter((element)=>{return element.length !== 0;}).length} minutes to read for an average person</p>
 
                 {/* preview */}
                 <h2 style={{color: props.mode==="light"?'black':'white'}}>Preview</h2>
